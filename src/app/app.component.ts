@@ -13,4 +13,8 @@ export class AppComponent {
     this.counter += value;
   }
 
+  resetCounter(): void{
+    this.counter = 10;
+  }
+
 }
