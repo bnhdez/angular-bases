@@ -1,11 +1,17 @@
 <h3>Listado de Héroes</h3>
 
-<div *ngIf="deletedHero">
+<!-- Si deletedHero no se cumple, muestra nothingWasDeleted -->
+<div *ngIf="deletedHero; else nothingWasDeleted">
   <h3>Héroe Borrado <small class="text-danger"> {{deletedHero}} </small></h3>
 </div>
 
 <!-- <h3 *ngIf="!deletedHero"> No ha borrado nada </h3> -->
-<h3> No ha borrado nada </h3>
+
+<!-- NG Template DIV fantasma, por defecto en invisible -->
+<ng-template #nothingWasDeleted>
+  <h3> No ha borrado nada </h3>
+</ng-template>
+
 
 <button (click)="removeLastHero()" class="btn btn-outline-danger">
   Borrar último héroe
