@@ -1,8 +1,6 @@
 <h3>Listado de Héroes</h3>
 
+<!-- Crea los elementos seguna la lista de array -->
 <ul class="mt-2 list-group">
-  <li class="list-group-item">Spider-Man</li>
-  <li class="list-group-item">Iron-Man</li>
-  <li class="list-group-item">Hullk</li>
-  <li class="list-group-item">Thor</li>
+  <li *ngFor="let name of heroNames" class="list-group-item">{{ name }}</li>
 </ul>
