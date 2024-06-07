@@ -1,11 +1,12 @@
-import { Component } from "@angular/core";
-
+import { Component, OnInit } from '@angular/core';
 
 @Component({
-  //nombre de componente
   selector: 'app-counter',
-  template: '<h1>Hola Counter</h1>',
+  template: '<h1>Hola Counter</h1>'
 })
-export class CounterComponent {
 
+export class CounterComponent implements OnInit {
+  constructor() { }
+
+  ngOnInit() { }
 }
