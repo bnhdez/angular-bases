@@ -13,6 +13,8 @@ export class ListComponent {
   // removeLastHero():void {
   //   deleted hero solo existe dentro de removeLastHero()
   //   const deletedhero = this.heroNames.pop();
+
+  //   console.log(deletedhero);
   // }
 
   removeLastHero(): void {
