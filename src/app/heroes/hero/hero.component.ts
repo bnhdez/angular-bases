@@ -10,4 +10,8 @@ export class HeroComponent {
   public name: string = 'Iron-Man';
   public age: number = 45;
 
+  get capitalizedName(): string {
+    return 'Hola Mundo!';
+  }
+
 }
