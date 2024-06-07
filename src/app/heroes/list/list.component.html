@@ -12,8 +12,8 @@
   <h3> No ha borrado nada </h3>
 </ng-template>
 
-
-<button (click)="removeLastHero()" class="btn btn-outline-danger">
+<!-- se mostrara si el lenght del array es mayor a 0 -->
+<button *ngIf="heroNames.length > 0" (click)="removeLastHero()" class="btn btn-outline-danger">
   Borrar último héroe
 </button>
 
