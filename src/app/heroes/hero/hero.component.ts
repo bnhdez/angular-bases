@@ -11,7 +11,7 @@ export class HeroComponent {
   public age: number = 45;
 
   get capitalizedName(): string {
-    return 'Hola Mundo!';
+    return this.name.toUpperCase();
   }
 
 }
