@@ -24,6 +24,7 @@ export class AddCharacterComponent {
     //validacion que envien nombre
     if ( this.character.name.length === 0 ) return;
 
+    //propiedad que envia this.character
     this.onNewCharacter.emit(this.character);
 
     //para limpiar input
