@@ -8,6 +8,8 @@ import { Character } from '../../interfaces/character.interface';
 })
 export class ListComponent {
 
+  //@Input() hace que la propiedad dentro de ListComponent reciba informacion del componente padre
+  //que es MainPageComponent
   @Input()
   public characterList:Character[] = [{
     name: 'Trunks',
