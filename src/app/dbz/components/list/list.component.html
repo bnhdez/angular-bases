@@ -5,13 +5,15 @@
     let i = index;
     let isFirst = first;
     let isLast = last;
+    let isEven = even;
+    let isOdd = odd;
     "
     class="list-group-item">
-    <span class="text-primary">{{ i + 1 }}. </span>
+    <span class="text-primary">{{ i }}. </span>
     <span>{{ character.name }} - </span>
     <strong>Power: </strong>
     <span>{{ character.power }}</span>
-    <span>Es el primero: {{ isFirst }} </span>
-    <span>Es el utlimo: {{ isLast }}</span>
+    <span>Es par: {{ isEven }} </span>
+    <span>Es impar: {{ isOdd }}</span>
   </li>
 </ul>
