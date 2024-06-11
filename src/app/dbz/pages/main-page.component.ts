@@ -25,4 +25,8 @@ export class MainPageComponent {
     //push al final del arreglo || unshift al inicio del arreglo
     this.characters.push(character);
   }
+
+  onDeleteCharacter( index:number ):void{
+    this.characters.splice(index, 1);
+  }
 }
