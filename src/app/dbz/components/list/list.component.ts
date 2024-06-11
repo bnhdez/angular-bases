@@ -20,7 +20,6 @@ export class ListComponent {
   public onDelete:EventEmitter<number> = new EventEmitter();
 
   onDeleteCharacter(index:number):void {
-    //TODO Emitir el id del personaje
     // console.log({index});
     this.onDelete.emit(index);
   }
