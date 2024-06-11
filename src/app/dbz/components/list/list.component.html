@@ -20,6 +20,6 @@
         <span>{{ character.power }}</span>
       </div>
       <!-- envia indicie del arreglo con i, i esta declarado arriba al inicio de la lista -->
-    <button (click)="onDeleteCharacter(i)" class="btn btn-danger">X</button>
+    <button (click)="onDeleteCharacter( character.id )" class="btn btn-danger">X</button>
   </li>
 </ul>

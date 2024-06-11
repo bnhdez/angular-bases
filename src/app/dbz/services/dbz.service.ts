@@ -36,7 +36,13 @@ export class DbzService {
     this.characters.push(newCharacter);
   }
 
-  onDeleteCharacter(index: number): void {
-    this.characters.splice(index, 1);
+  // onDeleteCharacter(index: number): void {
+  //   this.characters.splice(index, 1);
+  // }
+
+  //regresa nuevo arreglo con la condicion que espera que se cumpla
+  deleteCharacterById( id:string ){
+    //filtra el unico que sea igual al id que reciba
+    this.characters = this.characters.filter( character => character.id !== id )
   }
 }
