@@ -18,7 +18,7 @@ export class DbzService {
     power: 7500
   }];
 
-  onNewCharacter(character: Character): void {
+  addCharacter(character: Character): void {
     // console.log('Main Page');
     // console.log(character);
 
