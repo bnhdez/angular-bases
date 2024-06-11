@@ -19,6 +19,10 @@ export class AddCharacterComponent {
   };
 
   emitCharacter(): void {
+
+    //depurar en cierto punto || ver mis programa hasta ese punto
+    //debugger;
+
     console.log(this.character);
 
     //validacion que envien nombre
@@ -28,7 +32,6 @@ export class AddCharacterComponent {
     this.onNewCharacter.emit(this.character);
 
     //para limpiar input
-    this.character.name = '';
-    this.character.power = 0;
+    this.character = { name: '', power: 0 };
   }
 }
