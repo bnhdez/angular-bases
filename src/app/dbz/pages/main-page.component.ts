@@ -19,7 +19,10 @@ export class MainPageComponent {
   }];
 
   onNewCharacter( character:Character ):void {
-    console.log('Main Page');
-    console.log(character);
+    // console.log('Main Page');
+    // console.log(character);
+
+    //push al final del arreglo || unshift al inicio del arreglo
+    this.characters.push(character);
   }
 }
