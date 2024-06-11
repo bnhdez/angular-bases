@@ -19,6 +19,7 @@
         <strong>Power: </strong>
         <span>{{ character.power }}</span>
       </div>
-    <button class="btn btn-danger">X</button>
+      <!-- envia indicie del arreglo con i, i esta declarado arriba al inicio de la lista -->
+    <button (click)="onDeleteCharacter(i)" class="btn btn-danger">X</button>
   </li>
 </ul>

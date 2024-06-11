@@ -15,4 +15,9 @@ export class ListComponent {
     name: 'Trunks',
     power: 10
   }]
+
+  onDeleteCharacter(index: number):void {
+    //TODO Emitir el id del personaje
+    console.log({index});
+  }
 }
